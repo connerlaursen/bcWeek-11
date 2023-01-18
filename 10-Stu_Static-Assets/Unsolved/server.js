@@ -4,6 +4,9 @@ const app = express();
 const PORT = 3001;
 const path = require('path');
 
+
+app.use(express.static('public'));
+
 // Serve images, css files, js files from the public directory
 // Allows us to reference files with their relative path
 // Example: http://localhost:3000/images/cat.jpg
